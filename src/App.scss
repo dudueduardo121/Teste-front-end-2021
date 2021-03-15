@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+//cores
+$cor1: #f76b20;
+$cor2: #144c6f;
+$cor3: #fff;
+$cor4: #333;
+$cor5: #F7BB97;
+
+//font-size
+$font-titulo: 60px;
+$font-subtitulo: 40px;
+$font-paragrafo: 17px;
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  overflow: hidden;
+}

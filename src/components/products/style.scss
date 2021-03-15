@@ -1,0 +1,126 @@
+@import '../../App.scss';
+
+.services {
+    padding: 20px;
+    text-align: center;
+
+    .servicesList {
+        padding: 5px;
+        text-align: center;
+    
+        .containerList {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+    
+            .serviceBx {
+                position: relative;
+                background: $cor3;
+                box-shadow: 0 0 13px 0px;
+                width: 160px;
+                height: 120px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                transition: all 0.5s;
+                margin: 10px;
+                cursor: pointer;
+
+                .cardserviceItem {
+                    .icon {
+                        font-size: 25px;
+                    }
+        
+                    h2 {
+                        font-weight: 500;
+                        font-size: 20px;
+                        letter-spacing: 1px;
+                    }
+        
+                    a {
+                        text-decoration: none;
+                        color: $cor4;
+                    }
+
+                }
+                
+            }
+    
+            .serviceBx:hover {
+                background: $cor1;
+                box-shadow: 0 0 13px 0px;
+    
+                a{
+                    color: $cor3;
+                }
+            }
+        }
+    }
+
+    .containerProd {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 20px;
+    }
+
+    .cardService {
+        position: relative;
+        background: $cor3;
+        box-shadow: 0 0 13px 0px;
+        width: 350px;
+        height: 400px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 15px;
+    }
+
+    .cardItem .icon {
+        font-size: 40px;
+        color: $cor1;
+    }
+
+    p {
+        font-size: $font-paragrafo;
+    }
+
+    h2 {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: 1px;
+    }
+
+    .price {
+        text-decoration: none;
+        position: absolute;
+        font-size: 25px;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+        border: none;
+        height: 15%;
+        background-size: 200% auto;
+        color: $cor3;
+        transition: 0.5s;
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+        background-image: linear-gradient(to right, $cor1 0%, $cor5 51%, $cor1 100%);
+        padding: 10px;
+    }
+
+    .price:hover {
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        background-position: right center; 
+    }
+
+}
+

@@ -1,0 +1,137 @@
+@import '../../App.scss';
+
+.containerSobre {
+    padding-top: 20px;
+
+    .slick-list {
+        margin: 0 150px;
+        position: relative;
+    
+    }
+
+    .sliderSobre {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    .return a {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 20px;
+        padding: 20px;
+        text-decoration: none;
+        width: 200px;
+
+    
+        .icon {
+            color: $cor1;
+            font-size: 25px;
+        }
+    
+        h2 {
+            color: $cor1;
+            font-size: 35px;
+            font-weight: 500;
+            margin-left: 10px;
+        }
+        
+    }
+    
+    .contentSobre {
+        width: 100%;
+        padding: 60px 150px;
+
+        p{
+            font-size: $font-paragrafo;
+            color: $cor4;
+            font-weight: 400;
+            padding-top: 10px;
+        }
+    
+        .contentButton {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            padding-top: 20px;
+    
+            a {
+                text-decoration: none;
+                border-radius: 5px;
+                border: none;
+                height: 15%;
+                background-size: 200% auto;
+                color: $cor3;
+                transition: 0.5s;
+                transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+                background-image: linear-gradient(to right, $cor1 0%, $cor5 51%, $cor1 100%);
+                padding: 10px;
+                margin: 20px;
+            }
+        
+            a:hover {
+                box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+                background-position: right center; 
+            }
+        }
+    
+    
+    }
+
+    .slick-prev::before {
+        content: '';
+        background-image: url('./icons/left-arrow.svg');
+        font-size: 40px;
+        line-height: 1;
+        position: absolute;
+        opacity: .75;
+        color: $cor4;
+        left: 100px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .slick-next::before {
+        content: '';
+        background-image: url('./icons/right-arrow.svg');
+        font-size: 40px;
+        line-height: 1;
+        position: absolute;
+        opacity: .75;
+        color: $cor4;
+        right: 100px;
+        width: 50px;
+        height: 50px;
+    }
+
+        
+}
+
+
+@media (max-width: 480px) {
+
+    .contentSobre {
+        width: 100%;
+        padding: 20px!important;
+        .sliderSobre {
+
+        }
+    }
+
+    .return h2 {
+        font-size: 30px!important;
+    }
+
+    .slick-next::before {
+        display: none!important;
+    }
+    .slick-prev::before {
+        display: none!important;
+    }
+}
+
+
+
+
