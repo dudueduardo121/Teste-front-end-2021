@@ -30,7 +30,7 @@ export default function Home() {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatum labore praesentium veniam ex nam, sit, maxime dignissimos accusantium at quidem consequuntur! Eos, nesciunt temporibus voluptate voluptatem quas voluptates unde.
             </p>
             <div className="textButton">
-              <h3><span>R$</span> 40</h3>
+              <h3><span>R$</span> 60</h3>
               <a href="/Details">Saiba mais</a>
             </div>
           </div>
@@ -43,7 +43,7 @@ export default function Home() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatum labore praesentium veniam ex nam, sit, maxime dignissimos accusantium at quidem consequuntur! Eos, nesciunt temporibus voluptate voluptatem quas voluptates unde.
               </p>
               <div className="textButton">
-                <h3><span>R$</span> 40</h3>
+                <h3><span>R$</span> 80</h3>
                 <a href="/Details">Saiba mais</a>
               </div>
             </div>
